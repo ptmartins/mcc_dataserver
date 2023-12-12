@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "db/applications.json",
+                    "db/certificates.json",
+                    "db/databases.json",
+                    "db/defaultRights.json",
+                    "db/diagnostics.json",
+                    "db/fields.json",
+                    "db/general.json",
+                    "db/info.json",
+                    "db/license.json",
+                    "db/localCertificates.json",
+                    "db/mappingFiles.json",
+                    "db/renditionProfile.json",
+                    "db/resourceGroups.json",
+                    "db/roles.json",
+                    "db/schema.json",
+                    "db/tabs.json",
+                    "db/tools.json",
+                    "db/updates.json"
+
+                ]
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        }
+    ]
+}
