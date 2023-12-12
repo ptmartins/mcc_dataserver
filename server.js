@@ -6,24 +6,24 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-const data1 = require('./data/info.json');
-const data2 = require('./data/license.json');
-const data3 = require('./data/general.json');
-const data4 = require('./data/certificates.json');
-const data5 = require('./data/diagnostics.json');
-const data6 = require('./data/updates.json');
-const data7 = require('./data/resourceGroups.json');
-const data8 = require('./data/applications.json');
-const data9 = require('./data/schema.json');
-const data10 = require('./data/databases.json');
-const data11 = require('./data/localCertificates.json');
-const data12 = require('./data/fields.json');
-const data13 = require('./data/roles.json');
-const data14 = require('./data/renditionProfile.json');
-const data15 = require('./data/mappingFiles.json');
-const data16 = require('./data/defaultRights.json');
-const data17 = require('./data/tabs.json');
-const data18 = require('./data/tools.json');
+const data1 = require('./db/info.json');
+const data2 = require('./db/license.json');
+const data3 = require('./db/general.json');
+const data4 = require('./db/certificates.json');
+const data5 = require('./db/diagnostics.json');
+const data6 = require('./db/updates.json');
+const data7 = require('./db/resourceGroups.json');
+const data8 = require('./db/applications.json');
+const data9 = require('./db/schema.json');
+const data10 = require('./db/databases.json');
+const data11 = require('./db/localCertificates.json');
+const data12 = require('./db/fields.json');
+const data13 = require('./db/roles.json');
+const data14 = require('./db/renditionProfile.json');
+const data15 = require('./db/mappingFiles.json');
+const data16 = require('./db/defaultRights.json');
+const data17 = require('./db/tabs.json');
+const data18 = require('./db/tools.json');
 
 const combinedData = {
   info: data1.info,
@@ -50,11 +50,7 @@ const combinedData = {
 const router = jsonServer.router(combinedData);
 
 // server.use('/api', router);
-server.use(
-  jsonServer.rewriter({
-    "/api/*": "/$1",
-   })  
-)
+server.use('/api', router);
 
 
 const PORT = process.env.PORT || 3001;

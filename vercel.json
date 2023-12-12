@@ -31,7 +31,7 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/db/(.*)",
             "dest": "server.js"
         }
     ]
