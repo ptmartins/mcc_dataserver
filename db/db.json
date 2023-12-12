@@ -1855,11 +1855,11 @@
                     "version": "7.1.0.63259"
                 }
             ]
-        },
-        "tools": {
-            "rdp_port": 3389,
-            "can_remote_workflow_edit": 1
         }
+    },
+    "tools": {
+        "rdp_port": 3389,
+        "can_remote_workflow_edit": 1
     },
     "updates": {
         "current_version": "7.1.1.872",
