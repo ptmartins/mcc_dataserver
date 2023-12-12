@@ -49,7 +49,13 @@ const combinedData = {
 
 const router = jsonServer.router(combinedData);
 
-server.use('/api', router);
+// server.use('/api', router);
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+   })  
+)
+
 
 const PORT = process.env.PORT || 3001;
 
