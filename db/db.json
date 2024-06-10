@@ -1857,6 +1857,67 @@
             ]
         }
     },
+    "logs": {
+        "logsPerPage":10,
+        "logsOffset":0,
+        "total":190,
+        "today":"2024-06-10",
+        "result":[
+            {
+                "id": 0,
+                "date": "2024-06-10",
+                "filesize": "405"
+            },
+            {
+                "id": 1,
+                "date": "2024-06-06",
+                "filesize": "148"
+            },
+            {
+                "id": 2,
+                "date": "2024-06-04",
+                "filesize": "4696"
+            },
+            {
+                "id": 3,
+                "date": "2024-06-03",
+                "filesize": "4035"
+            },
+            {
+                "id": 4,
+                "date": "2024-05-23",
+                "filesize": "4962"
+            },
+            {
+                "id": 5,
+                "date": "2024-05-19",
+                "filesize": "391"
+            },
+            {
+                "id": 6,
+                "date": "2024-05-17",
+                "filesize": "134"
+            },
+            {
+                "id": 7,
+                "date": "2024-05-15",
+                "filesize": "841"
+            },
+            {
+                "id": 8,
+                "date": "2024-05-08",
+                "filesize": "270"
+            },
+            {
+                "id": 9,
+                "date": "2024-05-07",
+                "filesize": "7091"
+            },
+            {
+                "id": -1
+            }
+        ]
+    },
     "tools": {
         "rdp_port": 3389,
         "can_remote_workflow_edit": 1
