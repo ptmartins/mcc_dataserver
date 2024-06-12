@@ -1,7 +1,6 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db/db.json");
-const themesRouter = jsonServer.router("db/themes.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
@@ -10,7 +9,6 @@ server.use(
 		"/api/*": "/$1",
 	})
 );
-server.use("/themes", themesRouter); 
 server.use(router);
 server.listen(3001, () => {
 	console.log("JSON Server is running");
