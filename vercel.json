@@ -16,10 +16,6 @@
       {
           "src": "/(.*)",
           "dest": "server.js"
-      },
-      {
-          "src": "/themes",
-          "dest": "themesServer.js"
       }
   ]
 }
